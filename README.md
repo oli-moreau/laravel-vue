@@ -27,7 +27,21 @@ docker run -d -p 8000:8000 -p  3306:3306 -p 5173:5173 --name debian-laravel-vue 
 docker exec -it debian-laravel-vue bash
 ```
 
-### 3. Start the development servers
+### 3. Install the dependencies
+
+```bash
+composer install
+npm install
+```
+
+### 4. Setup Laravel
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+### 5. Start the development servers
 ```bash
 php artisan serve --host=0.0.0.0
 npm run dev -- --host
