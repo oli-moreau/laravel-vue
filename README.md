@@ -27,4 +27,9 @@ docker run -d -p 8000:8000 -p  3306:3306 -p 5173:5173 --name debian-laravel-vue 
 docker exec -it debian-laravel-vue bash
 ```
 
+### 3. Start the development servers
+```bash
+php artisan serve --host=0.0.0.0
+npm run dev -- --host
+```
 The development server is now available at http://localhost:8000/
