@@ -1,4 +1,4 @@
-# Laravel 10 with Vue 3 Project in Docker Container
+# Laravel 10 with Vue 3 Project template
 
 This is a Laravel 10 project with Vue 3 and Vue Router, intended to be run as a Docker container. The project runs a Laravel development server and Vue development server inside the container, making it easy to get started with development.
 
